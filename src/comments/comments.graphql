@@ -1,0 +1,12 @@
+type Mutation {
+  commentPost(id: ID!, input: CommentInput): Comment!
+}
+
+type Comment {
+  _id: ID!
+  text: String!
+}
+
+input CommentInput {
+  text: String!
+}
